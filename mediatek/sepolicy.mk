@@ -1,4 +1,4 @@
-#
+a#
 # This policy configuration will be used by all mediatek products
 # that inherit from Lineage
 #
@@ -11,10 +11,10 @@ endif
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/custom/sepolicy/mediatek/dynamic \
-    device/custom/sepolicy/mediatek/system
+    device/candy/sepolicy/mediatek/dynamic \
+    device/candy/sepolicy/mediatek/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/custom/sepolicy/mediatek/dynamic \
-    device/custom/sepolicy/mediatek/vendor
+    device/candy/sepolicy/mediatek/dynamic \
+    device/candy/sepolicy/mediatek/vendor
 endif
